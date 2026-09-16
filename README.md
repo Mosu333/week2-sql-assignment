@@ -10,11 +10,11 @@ FROM payments;
 SELECT orderDate, requiredDate, status
 FROM orders
 WHERE status = 'In Process'
-ORDER BY orderDate DES
+ORDER BY orderDate DESC;
 
 ## Question 3: Find Sales Representatives
 
-SELECT fistName, lasName, email
+SELECT firstName, lastName, email
 FROM employees
 WHERE jobTitle = 'Sales Rep'
 ORDER BY employeeNumber DESC;
